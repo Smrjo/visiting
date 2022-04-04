@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERA_BHARAT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <style>
+        *{
+            margin: 0px; padding: 0px;
+            box-sizing: border-box; 
+        }
+
+        header{
+            width: 100%; height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("Tajmahal.webp");
+            /* linear-gradient use to dark yhe image */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+
+        nav{
+           width: 100%; height: 15vh;
+           background-color: rgba(0,0,0,0.2);
+           color: white; display: flex; justify-content: space-between;
+           align-items: center;text-transform: uppercase;
+        }
+        
+        nav .logo{
+            width: 25%;text-align: center;
+            color: #00b894;
+        }
+
+        nav .menu{
+            width: 40%;
+            display:flex; justify-content: space-around;
+        }
+          
+        nav .menu a{
+            width: 25%;
+            text-decoration: none;
+            color: white; font-weight: bold;
+        }
+
+        nav .menu a:first-child{
+            color: #00b894;
+        }
+ 
+        main{
+            width: 100%;
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+
+        section h3{
+            font-size: 30px; font-weight: 200; letter-spacing: 3px;
+            text-shadow: 2px 2px 2px black ;
+        }
+        s
+
+        section h1{
+            margin: 10px 0 20px 0;
+            font-size:65px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            text-shadow: 2px 1px 5px black;
+            text-transform: uppercase;
+        }
+
+        section p{
+            font-size: 25px;
+            word-spacing: 2px;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        section a{
+            padding: 12px 30px;
+            border-radius: 4px;
+            outline: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-size: 13px;
+            font-weight: 50;
+            text-decoration: none;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all .5s ease;
+        }
+
+        section .btnone{
+            background-color: #fff ;
+            color: #000;
+        }
+
+        .btnone:hover{
+            background-color: #00b894;
+            color: #fff;
+        }
+
+        section .btntwo{
+            background-color: #00b894;
+            color: #fff;
+        } 
+
+        .btntwo:hover{
+            background-color: #fff ;
+            color: #000;
+        }
+
+        .change_content:after{
+             content: '';
+             animation: changetext 10s infinite linear;
+             color: #00b894;
+        }
+
+        @keyframes changetext{
+            0%{content: "Darjeeling";}
+            20%{content: "Agra";}
+            35%{content: "Jaipur";}
+            60%{content: "Kerala";}
+            80%{content: "Delhi";}
+            100%{content: "Mumbai";}
+        }
+
+        @media screen and (width: 600px) {
+            body{
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 class="animated infinite heartBeat ">Mera Bharat</h1>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Gallary</a>
+                <a href="https://www.google.com/search?q=tourist+places+in+india&sxsrf=APq-WBuejD6afOzvHtft_K_GqG5L9XWHeA%3A1648578725460&ei=pVBDYqHeG5TD3LUP8JGPwAo&oq=tourist+&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQkQIyBQgAEIAEMggIABCABBDJAzIFCAAQkgMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6DAguEMgDELADEEMYAToPCC4Q1AIQyAMQsAMQQxgBOgcIIxDqAhAnOgQIIxAnOgsIABCABBCxAxCDAToICAAQsQMQgwE6CAguELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQsQMQgwE6BAgAEEM6CAguENQCEJECOgoIABCxAxCDARBDOggIABCxAxCRAjoHCAAQsQMQQzoHCC4QsQMQQzoFCAAQsQNKBAhBGABKBAhGGAFQowRYnj1gnVFoAnABeASAAeECiAGGFJIBBzAuNy40LjGYAQCgAQGwAQrIARLAAQHaAQYIARABGAg&sclient=gws-wiz" target="_blank">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+            <main>
+                <section>
+                    <h3>Welcome To INDIA</h3>
+                    <h1>DO COME AND VISIT <span class="change_content"></span></h1>
+                    <p>"India once is not enough"</p>
+                    <a href="#" class="btnone">Learn More</a>
+                    <a href="#" class="btntwo">Sign Up</a>
+                </section>
+            </main>
+    </header>
+</body>
+</html>
